@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     float m = atof(argv[1]);
     int y, l, len2, calc = 1, s;
     char ar[cs][cs];
+    char space = ' ', line = '+';
     //Changing console text color
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
@@ -23,16 +24,16 @@ int main(int argc, char *argv[])
     {
         for (int j = 1; j < cs; j++)
         {
-            ar[i][j] = 32;
+            ar[i][j] = space;
         }
     }
     //Populating the array
     for (int x = 1; x < cs; x++)
     {
-        if (m * x < cs)
+        y = round(m * x);
+        if (y < cs)
         {
-            y = round(m * x);
-            ar[y][x] = 43;
+            ar[y][x] = line;
         }
     }
     //Calculating total length

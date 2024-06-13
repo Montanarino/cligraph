@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     //Populating the array
     for (int x = 1; x < cs; x++)
     {
-        if (m * x <= cs)
+        if (m * x <= cs - 1)
         {
             y = round(m * x);
             ar[y][x] = 43;

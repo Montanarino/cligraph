@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
         calc = cs / pow(10, l);
     }
     //Printing the graphic
-    for (int i = (cs - 1); i > 0; i--)
+    for (int i = cs - 1; i > 0; i--)
     {
         calc = 1;
         //Calculating the number of spaces needed

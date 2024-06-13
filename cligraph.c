@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     //Checking wrong usage
-    if (argc != 1)
+    if (argc != 2)
     {
         printf("Usage: cligraph.exe <value>\n");
         return 1;

@@ -6,6 +6,12 @@
 
 int main(int argc, char *argv[])
 {
+    //Checking wrong usage
+    if (argc != 1)
+    {
+        printf("Usage: cligraph.exe <value>\n");
+        return 1;
+    }
     float m = atof(argv[1]);
     int y, l, len2, calc = 1, s;
     char ar[cs][cs];
